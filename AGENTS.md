@@ -1,6 +1,6 @@
-# AI Agent Instructions for Navin Frontend
+# AI Agent Instructions for OrbitHaul Frontend
 
-**Navin** is a blockchain-powered logistics platform: React 19 + TypeScript + Vite. Real-time shipment dashboards, on-chain milestones, automated settlements (Stellar Soroban).
+**OrbitHaul** is a blockchain-powered logistics platform: React 19 + TypeScript + Vite. Real-time shipment dashboards, on-chain milestones, automated settlements (Stellar Soroban).
 
 ---
 
@@ -44,5 +44,5 @@ For detailed guidance, search the codebase or check:
 
 ## Related Repos
 
-- [navin-contracts](https://github.com/Navin-xmr/navin-contracts) — Soroban smart contracts
-- [navin-backend](https://github.com/Navin-xmr/navin-backend) — REST API
+- [Orbit-Haul-contracts](https://github.com/OrbitHaul/Orbit-Haul-contracts) — Soroban smart contracts
+- [Orbit-Haul-backend](https://github.com/OrbitHaul/Orbit-Haul-backend) — REST API
