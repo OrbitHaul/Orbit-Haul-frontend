@@ -26,10 +26,12 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: "pnpm run dev",
-    cwd: "./frontend",
+    command: process.env.CI
+      ? "pnpm --dir frontend run preview --port 5173"
+      : "pnpm run dev",
+    cwd: process.env.CI ? "." : "./frontend",
     url: "http://localhost:5173",
     reuseExistingServer: !process.env.CI,
-    timeout: 120_000,
+    timeout: 180_000,
   },
 });
