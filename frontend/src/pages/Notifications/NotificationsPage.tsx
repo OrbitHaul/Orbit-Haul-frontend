@@ -205,7 +205,7 @@ const NotificationsPage = () => {
       <div className="bg-[#111418] w-full border-b border-[#283039] px-8 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img src="/plan.svg" alt="Plan Icon" className="w-8 h-8" />
-          <p className="text-lg font-semibold m-0 tracking-[0.5px]">NAVIN</p>
+          <p className="text-lg font-semibold m-0 tracking-[0.5px]">ORBITHAUL</p>
         </div>
         <div className="flex items-center gap-8">
           <nav className="flex gap-8">
