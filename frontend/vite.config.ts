@@ -17,8 +17,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "images/**/*"],
       manifest: {
-        name: "Navin — Blockchain Logistics",
-        short_name: "Navin",
+        name: "OrbitHaul — Blockchain Logistics",
+        short_name: "OrbitHaul",
         description: "Track shipments and settlements on Stellar",
         theme_color: "#0d1117",
         background_color: "#0d1117",
