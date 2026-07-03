@@ -52,7 +52,7 @@ const ShipmentPrintView: React.FC<ShipmentPrintViewProps> = ({ data, onClose }) 
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
           <div>
             <div style={{ fontSize: '26px', fontWeight: 800, color: '#00d4c8', letterSpacing: '0.04em' }}>
-              NAVIN
+              ORBITHAUL
             </div>
             <div style={{ fontSize: '10px', color: '#555', marginTop: '2px' }}>
               Powered by Stellar Soroban
