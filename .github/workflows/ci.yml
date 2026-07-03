@@ -157,6 +157,10 @@ jobs:
         run: pnpm exec playwright install --with-deps chromium firefox
         working-directory: frontend
 
+      - name: Build app for E2E
+        run: pnpm run build
+        working-directory: frontend
+
       - name: Run E2E tests
         run: pnpm exec playwright test --config=../playwright.config.ts
         working-directory: frontend
