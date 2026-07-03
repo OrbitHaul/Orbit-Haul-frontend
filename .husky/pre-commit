@@ -1,1 +1,1 @@
-pnpm --filter navin-frontend exec lint-staged
+pnpm --filter orbit-haul-frontend exec lint-staged
