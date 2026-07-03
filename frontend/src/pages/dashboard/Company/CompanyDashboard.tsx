@@ -111,7 +111,7 @@ const CompanyDashboard: React.FC = () => {
           <div className="w-9 h-9 bg-[#3b82f6] rounded-[10px] flex items-center justify-center">
             <Rocket size={16} color="#fff" />
           </div>
-          <span className="text-lg font-extrabold text-white tracking-widest">NAVIN</span>
+          <span className="text-lg font-extrabold text-white tracking-widest">ORBITHAUL</span>
         </div>
         <button className="bg-transparent border-none cursor-pointer p-1 flex items-center" aria-label="Menu">
           <Menu size={22} color="#fff" />
