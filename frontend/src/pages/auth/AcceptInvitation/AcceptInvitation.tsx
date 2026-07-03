@@ -124,7 +124,7 @@ const AcceptInvitation: React.FC = () => {
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">
           <img src="/images/logo.svg" alt="OrbitHaul Logo" className="w-8 h-8" />
-          <span className="text-xl font-bold text-[#62ffff]">NAVIN</span>
+          <span className="text-xl font-bold text-[#62ffff]">ORBITHAUL</span>
         </div>
 
         <h1 className="text-xl font-semibold text-white mb-1">You're invited!</h1>
