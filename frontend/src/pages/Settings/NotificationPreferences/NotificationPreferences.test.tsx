@@ -56,8 +56,8 @@ describe('rendering', () => {
   it('renders all 3 category headings', async () => {
     render(<NotificationPreferences />);
     await waitFor(() => expect(mockGetPreferences).toHaveBeenCalledTimes(1));
+    await waitFor(() => expect(screen.getByText('Shipments')).toBeInTheDocument());
 
-    expect(screen.getByText('Shipments')).toBeInTheDocument();
     expect(screen.getByText('Payments')).toBeInTheDocument();
     expect(screen.getByText('Disputes')).toBeInTheDocument();
   });
