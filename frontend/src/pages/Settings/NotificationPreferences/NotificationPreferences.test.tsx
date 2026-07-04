@@ -170,6 +170,7 @@ describe('phone verification', () => {
     fireEvent.change(screen.getByLabelText('Phone number'), { target: { value: '+15550001234' } });
     fireEvent.click(screen.getByLabelText('Send OTP'));
     await waitFor(() => expect(mockSendOtp).toHaveBeenCalled());
+    await waitFor(() => expect(screen.getByLabelText('Verification code')).toBeInTheDocument());
 
     fireEvent.change(screen.getByLabelText('Verification code'), { target: { value: '123456' } });
     fireEvent.click(screen.getByLabelText('Verify OTP'));
