@@ -162,11 +162,12 @@ jobs:
         working-directory: frontend
 
       - name: Run E2E tests
-        run: pnpm exec playwright test --config=../playwright.config.ts
+        run: pnpm exec playwright test --config=../playwright.config.ts --reporter=list
         working-directory: frontend
         env:
           CI: true
           VITE_API_BASE_URL: http://localhost:5173
+          DEBUG: pw:api,pw:browser
 
       - name: Upload Playwright report
         if: failure()
