@@ -1,5 +1,8 @@
 name: Frontend CI
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [main]
@@ -162,12 +165,30 @@ jobs:
         working-directory: frontend
 
       - name: Run E2E tests
-        run: pnpm exec playwright test --config=../playwright.config.ts --reporter=list
+        id: e2e
+        run: |
+          set +e
+          pnpm exec playwright test --config=../playwright.config.ts --reporter=list 2>&1 | tee /tmp/e2e_out.txt
+          echo "exit_code=${PIPESTATUS[0]}" >> $GITHUB_OUTPUT
         working-directory: frontend
         env:
           CI: true
           VITE_API_BASE_URL: http://localhost:5173
-          DEBUG: pw:api,pw:browser
+
+      - name: Save E2E output to repo
+        if: always()
+        run: |
+          git config user.email "ci@orbithaul.io"
+          git config user.name "OrbitHaul CI"
+          cp /tmp/e2e_out.txt e2e_output.txt
+          git add e2e_output.txt
+          git diff --staged --quiet || git commit -m "ci: update e2e_output.txt [skip ci]"
+          git pull --rebase origin main || true
+          git push origin HEAD:main || true
+
+      - name: Fail if E2E failed
+        if: steps.e2e.outputs.exit_code != '0'
+        run: exit 1
 
       - name: Upload Playwright report
         if: failure()
