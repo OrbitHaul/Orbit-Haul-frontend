@@ -3,264 +3,129 @@
 
 Running 69 tests using 1 worker
 
-  ✘   1 [chromium] › ../e2e/auth.spec.ts:11:7 › Authentication › login with valid credentials redirects to dashboard (5.6s)
-  ✘   2 [chromium] › ../e2e/auth.spec.ts:11:7 › Authentication › login with valid credentials redirects to dashboard (retry #1) (6.2s)
-  ✓   3 [chromium] › ../e2e/auth.spec.ts:24:7 › Authentication › login with invalid credentials shows error message (678ms)
-  ✓   4 [chromium] › ../e2e/auth.spec.ts:40:7 › Authentication › login form shows field-level validation errors (465ms)
-  ✓   5 [chromium] › ../e2e/auth.spec.ts:50:7 › Authentication › login form validates email format (440ms)
-  ✓   6 [chromium] › ../e2e/auth.spec.ts:59:7 › Authentication › logout redirects to landing page (988ms)
-  ✓   7 [chromium] › ../e2e/auth.spec.ts:70:7 › Authentication › accessing /dashboard unauthenticated redirects to login (714ms)
-  ✓   8 [chromium] › ../e2e/auth.spec.ts:83:7 › Authentication › protected routes are inaccessible after logout (838ms)
-  ✘   9 [chromium] › ../e2e/auth.spec.ts:91:7 › Authentication › previously saved location is restored after login (5.8s)
-  ✘  10 [chromium] › ../e2e/auth.spec.ts:91:7 › Authentication › previously saved location is restored after login (retry #1) (6.4s)
-  ✓  11 [chromium] › ../e2e/auth.spec.ts:112:7 › Authentication › auth check loading spinner renders then resolves (942ms)
-  ✘  12 [chromium] › ../e2e/ledger.spec.ts:13:7 › Blockchain Ledger › ledger table loads and renders block rows (5.5s)
-  ✘  13 [chromium] › ../e2e/ledger.spec.ts:13:7 › Blockchain Ledger › ledger table loads and renders block rows (retry #1) (6.1s)
-  ✘  14 [chromium] › ../e2e/ledger.spec.ts:27:7 › Blockchain Ledger › block number is displayed with # prefix (5.6s)
-  ✘  15 [chromium] › ../e2e/ledger.spec.ts:27:7 › Blockchain Ledger › block number is displayed with # prefix (retry #1) (6.1s)
-  ✓  16 [chromium] › ../e2e/ledger.spec.ts:34:7 › Blockchain Ledger › milestone event badges are displayed (1.4s)
-  ✘  17 [chromium] › ../e2e/ledger.spec.ts:42:7 › Blockchain Ledger › verified blocks show "Verified" status (5.4s)
-  ✘  18 [chromium] › ../e2e/ledger.spec.ts:42:7 › Blockchain Ledger › verified blocks show "Verified" status (retry #1) (6.0s)
-  ✘  19 [chromium] › ../e2e/ledger.spec.ts:48:7 › Blockchain Ledger › transaction hash is truncated in the table (5.6s)
-  ✘  20 [chromium] › ../e2e/ledger.spec.ts:48:7 › Blockchain Ledger › transaction hash is truncated in the table (retry #1) (6.2s)
-  ✘  21 [chromium] › ../e2e/ledger.spec.ts:60:7 › Blockchain Ledger › transaction hash links open Stellar Expert in a new tab (5.5s)
-  ✘  22 [chromium] › ../e2e/ledger.spec.ts:60:7 › Blockchain Ledger › transaction hash links open Stellar Expert in a new tab (retry #1) (6.1s)
-  ✘  23 [chromium] › ../e2e/ledger.spec.ts:75:7 › Blockchain Ledger › "Next" button fetches the next cursor page (5.5s)
-  ✘  24 [chromium] › ../e2e/ledger.spec.ts:75:7 › Blockchain Ledger › "Next" button fetches the next cursor page (retry #1) (6.1s)
-  ✘  25 [chromium] › ../e2e/ledger.spec.ts:89:7 › Blockchain Ledger › "Previous" button is disabled on the first page (5.6s)
-  ✘  26 [chromium] › ../e2e/ledger.spec.ts:89:7 › Blockchain Ledger › "Previous" button is disabled on the first page (retry #1) (6.1s)
-  ✘  27 [chromium] › ../e2e/ledger.spec.ts:97:7 › Blockchain Ledger › "Previous" button navigates back to page 1 (5.5s)
-  ✘  28 [chromium] › ../e2e/ledger.spec.ts:97:7 › Blockchain Ledger › "Previous" button navigates back to page 1 (retry #1) (6.1s)
-  ✘  29 [chromium] › ../e2e/ledger.spec.ts:110:7 › Blockchain Ledger › filter by milestone event resets to page 1 (5.5s)
-  ✘  30 [chromium] › ../e2e/ledger.spec.ts:110:7 › Blockchain Ledger › filter by milestone event resets to page 1 (retry #1) (6.1s)
-  ✓  31 [chromium] › ../e2e/ledger.spec.ts:125:7 › Blockchain Ledger › filter buttons render for all milestone event types (1.4s)
-  ✘  32 [chromium] › ../e2e/ledger.spec.ts:142:7 › Blockchain Ledger › refresh button triggers a new API fetch (5.4s)
-  ✘  33 [chromium] › ../e2e/ledger.spec.ts:142:7 › Blockchain Ledger › refresh button triggers a new API fetch (retry #1) (6.1s)
-  ✘  34 [chromium] › ../e2e/ledger.spec.ts:163:7 › Blockchain Ledger › total blocks count is displayed in stats bar (5.5s)
-  ✘  35 [chromium] › ../e2e/ledger.spec.ts:163:7 › Blockchain Ledger › total blocks count is displayed in stats bar (retry #1) (6.0s)
-  ✓  36 [chromium] › ../e2e/ledger.spec.ts:170:7 › Blockchain Ledger › network label shows Stellar Mainnet (1.4s)
-  ✓  37 [chromium] › ../e2e/ledger.spec.ts:176:7 › Blockchain Ledger › error banner renders when API fails (1.3s)
-  ✓  38 [chromium] › ../e2e/notifications.spec.ts:13:7 › Notifications › notifications page renders the list (1.3s)
-  ✓  39 [chromium] › ../e2e/notifications.spec.ts:23:7 › Notifications › unread notifications have an unread indicator dot (1.3s)
-  ✓  40 [chromium] › ../e2e/notifications.spec.ts:34:7 › Notifications › read notifications are rendered in the EARLIER section (1.3s)
-  ✓  41 [chromium] › ../e2e/notifications.spec.ts:43:7 › Notifications › clicking a notification marks it as read (1.7s)
-  ✓  42 [chromium] › ../e2e/notifications.spec.ts:63:7 › Notifications › "Mark all as read" button clears all unread indicators (1.6s)
-  ✘  43 [chromium] › ../e2e/notifications.spec.ts:79:7 › Notifications › filter by Shipments tab shows only shipment notifications (5.7s)
-  ✘  44 [chromium] › ../e2e/notifications.spec.ts:79:7 › Notifications › filter by Shipments tab shows only shipment notifications (retry #1) (6.3s)
-  ✘  45 [chromium] › ../e2e/notifications.spec.ts:93:7 › Notifications › filter by Settlements tab shows only settlement notifications (5.8s)
-  ✘  46 [chromium] › ../e2e/notifications.spec.ts:93:7 › Notifications › filter by Settlements tab shows only settlement notifications (retry #1) (6.2s)
-  ✓  47 [chromium] › ../e2e/notifications.spec.ts:104:7 › Notifications › filter by System tab shows only system notifications (1.9s)
-  ✓  48 [chromium] › ../e2e/notifications.spec.ts:116:7 › Notifications › All tab restores full notification list (1.7s)
-  ✓  49 [chromium] › ../e2e/notifications.spec.ts:127:7 › Notifications › search filters notifications by title keyword (2.0s)
-  ✓  50 [chromium] › ../e2e/notifications.spec.ts:139:7 › Notifications › search filters notifications by badge content (2.0s)
-  ✓  51 [chromium] › ../e2e/notifications.spec.ts:151:7 › Notifications › empty search result shows "no notifications found" message (1.6s)
-  ✓  52 [chromium] › ../e2e/notifications.spec.ts:167:7 › Notifications › filter count badges show correct totals (1.3s)
-  ✓  53 [chromium] › ../e2e/notifications.spec.ts:175:7 › Notifications › pagination renders when list exceeds items per page (1.3s)
-  ✓  54 [chromium] › ../e2e/notifications.spec.ts:186:7 › Notifications › next page button navigates to page 2 (3.2s)
-  ✓  55 [chromium] › ../e2e/notifications.spec.ts:196:7 › Notifications › previous page button is disabled on page 1 (1.2s)
-  ✘  56 [chromium] › ../e2e/settlements.spec.ts:13:7 › Settlements › settlements list renders with correct rows (5.4s)
-  ✘  57 [chromium] › ../e2e/settlements.spec.ts:13:7 › Settlements › settlements list renders with correct rows (retry #1) (6.0s)
-  ✘  58 [chromium] › ../e2e/settlements.spec.ts:21:7 › Settlements › status badges display correct labels (5.5s)
-  ✘  59 [chromium] › ../e2e/settlements.spec.ts:21:7 › Settlements › status badges display correct labels (retry #1) (6.0s)
-  ✘  60 [chromium] › ../e2e/settlements.spec.ts:30:7 › Settlements › summary cards show totals (5.5s)
-  ✘  61 [chromium] › ../e2e/settlements.spec.ts:30:7 › Settlements › summary cards show totals (retry #1) (6.0s)
-  ✘  62 [chromium] › ../e2e/settlements.spec.ts:38:7 › Settlements › clicking a settlement row opens the Payment Detail Modal (15.6s)
-  ✘  63 [chromium] › ../e2e/settlements.spec.ts:38:7 › Settlements › clicking a settlement row opens the Payment Detail Modal (retry #1) (16.1s)
-  ✘  64 [chromium] › ../e2e/settlements.spec.ts:50:7 › Settlements › Payment Detail Modal shows shipment ID (15.6s)
-  ✘  65 [chromium] › ../e2e/settlements.spec.ts:50:7 › Settlements › Payment Detail Modal shows shipment ID (retry #1) (16.1s)
-  ✘  66 [chromium] › ../e2e/settlements.spec.ts:60:7 › Settlements › Payment Detail Modal can be closed (15.6s)
-  ✘  67 [chromium] › ../e2e/settlements.spec.ts:60:7 › Settlements › Payment Detail Modal can be closed (retry #1) (16.1s)
-  ✘  68 [chromium] › ../e2e/settlements.spec.ts:73:7 › Settlements › filter by settlement status — RELEASED only (15.5s)
-  ✘  69 [chromium] › ../e2e/settlements.spec.ts:73:7 › Settlements › filter by settlement status — RELEASED only (retry #1) (16.0s)
-  ✘  70 [chromium] › ../e2e/settlements.spec.ts:104:7 › Settlements › sort toggle button changes sort order label (5.6s)
-  ✘  71 [chromium] › ../e2e/settlements.spec.ts:104:7 › Settlements › sort toggle button changes sort order label (retry #1) (6.1s)
-  ✘  72 [chromium] › ../e2e/settlements.spec.ts:118:7 › Settlements › pagination controls are present when there are multiple pages (5.5s)
-  ✘  73 [chromium] › ../e2e/settlements.spec.ts:118:7 › Settlements › pagination controls are present when there are multiple pages (retry #1) (6.0s)
-  ✘  74 [chromium] › ../e2e/settlements.spec.ts:143:7 › Settlements › previous page button is disabled on page 1 (5.5s)
-  ✘  75 [chromium] › ../e2e/settlements.spec.ts:143:7 › Settlements › previous page button is disabled on page 1 (retry #1) (6.0s)
-  ✘  76 [chromium] › ../e2e/settlements.spec.ts:159:7 › Settlements › next page button navigates to page 2 (15.5s)
-  ✘  77 [chromium] › ../e2e/settlements.spec.ts:159:7 › Settlements › next page button navigates to page 2 (retry #1) (16.1s)
-  ✘  78 [chromium] › ../e2e/shipments-company.spec.ts:13:7 › Shipments — Company view › shipments list renders with rows from API (5.6s)
-  ✘  79 [chromium] › ../e2e/shipments-company.spec.ts:13:7 › Shipments — Company view › shipments list renders with rows from API (retry #1) (6.1s)
-  ✘  80 [chromium] › ../e2e/shipments-company.spec.ts:22:7 › Shipments — Company view › pagination summary is displayed (5.6s)
-  ✘  81 [chromium] › ../e2e/shipments-company.spec.ts:22:7 › Shipments — Company view › pagination summary is displayed (retry #1) (6.1s)
-  ✘  82 [chromium] › ../e2e/shipments-company.spec.ts:28:7 › Shipments — Company view › previous page button is disabled on first page (5.5s)
-  ✘  83 [chromium] › ../e2e/shipments-company.spec.ts:28:7 › Shipments — Company view › previous page button is disabled on first page (retry #1) (6.0s)
-  ✓  84 [chromium] › ../e2e/shipments-company.spec.ts:35:7 › Shipments — Company view › filter shipments by status — IN_TRANSIT (809ms)
-  ✘  85 [chromium] › ../e2e/shipments-company.spec.ts:61:7 › Shipments — Company view › shipment row shows origin, destination, and status badge (5.4s)
-  ✘  86 [chromium] › ../e2e/shipments-company.spec.ts:61:7 › Shipments — Company view › shipment row shows origin, destination, and status badge (retry #1) (6.1s)
-  ✘  87 [chromium] › ../e2e/shipments-company.spec.ts:72:7 › Shipments — Company view › open shipment detail renders all key sections (1.6s)
-  ✘  88 [chromium] › ../e2e/shipments-company.spec.ts:72:7 › Shipments — Company view › open shipment detail renders all key sections (retry #1) (1.7s)
-  ✓  89 [chromium] › ../e2e/shipments-company.spec.ts:85:7 › Shipments — Company view › create shipment form renders all required fields (819ms)
-  ✓  90 [chromium] › ../e2e/shipments-company.spec.ts:97:7 › Shipments — Company view › create shipment form shows validation errors when submitted empty (3.2s)
-  ✘  91 [chromium] › ../e2e/shipments-company.spec.ts:112:7 › Shipments — Company view › create shipment submits and shows success screen (7.2s)
-  ✘  92 [chromium] › ../e2e/shipments-company.spec.ts:112:7 › Shipments — Company view › create shipment submits and shows success screen (retry #1) (7.9s)
-  ✘  93 [chromium] › ../e2e/shipments-company.spec.ts:143:7 › Shipments — Company view › create another button resets the form after success (7.3s)
-  ✘  94 [chromium] › ../e2e/shipments-company.spec.ts:143:7 › Shipments — Company view › create another button resets the form after success (retry #1) (7.9s)
-  ✓  95 [chromium] › ../e2e/shipments-company.spec.ts:179:7 › Shipments — Company view › back button navigates away from create form (2.4s)
-  ✘  96 [chromium] › ../e2e/shipments-customer.spec.ts:13:7 › Shipments — Customer view › customer can view the shipments list (5.5s)
-  ✘  97 [chromium] › ../e2e/shipments-customer.spec.ts:13:7 › Shipments — Customer view › customer can view the shipments list (retry #1) (6.1s)
-  ✘  98 [chromium] › ../e2e/shipments-customer.spec.ts:22:7 › Shipments — Customer view › customer can open a shipment detail page (1.6s)
-  ✘  99 [chromium] › ../e2e/shipments-customer.spec.ts:22:7 › Shipments — Customer view › customer can open a shipment detail page (retry #1) (2.1s)
-  ✓  100 [chromium] › ../e2e/shipments-customer.spec.ts:29:7 › Shipments — Customer view › customer shipment detail shows milestone timeline (1.5s)
-  ✓  101 [chromium] › ../e2e/shipments-customer.spec.ts:41:7 › Shipments — Customer view › customer cannot see "Create Shipment" link in navigation (461ms)
-  ✓  102 [chromium] › ../e2e/shipments-customer.spec.ts:52:7 › Shipments — Customer view › customer cannot access the create shipment page directly (450ms)
-  ✘  103 [chromium] › ../e2e/shipments-customer.spec.ts:63:7 › Shipments — Customer view › customer shipments list shows correct columns (5.4s)
-  ✘  104 [chromium] › ../e2e/shipments-customer.spec.ts:63:7 › Shipments — Customer view › customer shipments list shows correct columns (retry #1) (6.2s)
-  ✘  105 [chromium] › ../e2e/shipments-customer.spec.ts:80:7 › Shipments — Customer view › customer sees delivery status badge on shipment row (5.5s)
-  ✘  106 [chromium] › ../e2e/shipments-customer.spec.ts:80:7 › Shipments — Customer view › customer sees delivery status badge on shipment row (retry #1) (6.1s)
+  ✓   1 [chromium] › ../e2e/auth.spec.ts:11:7 › Authentication › login with valid credentials redirects to dashboard (609ms)
+  ✓   2 [chromium] › ../e2e/auth.spec.ts:24:7 › Authentication › login with invalid credentials shows error message (569ms)
+  ✓   3 [chromium] › ../e2e/auth.spec.ts:40:7 › Authentication › login form shows field-level validation errors (513ms)
+  ✓   4 [chromium] › ../e2e/auth.spec.ts:50:7 › Authentication › login form validates email format (589ms)
+  ✓   5 [chromium] › ../e2e/auth.spec.ts:59:7 › Authentication › logout redirects to landing page (1.0s)
+  ✓   6 [chromium] › ../e2e/auth.spec.ts:70:7 › Authentication › accessing /dashboard unauthenticated redirects to login (744ms)
+  ✓   7 [chromium] › ../e2e/auth.spec.ts:83:7 › Authentication › protected routes are inaccessible after logout (875ms)
+  ✓   8 [chromium] › ../e2e/auth.spec.ts:91:7 › Authentication › previously saved location is restored after login (838ms)
+  ✓   9 [chromium] › ../e2e/auth.spec.ts:112:7 › Authentication › auth check loading spinner renders then resolves (908ms)
+  ✘  10 [chromium] › ../e2e/ledger.spec.ts:13:7 › Blockchain Ledger › ledger table loads and renders block rows (1.3s)
+  ✘  11 [chromium] › ../e2e/ledger.spec.ts:13:7 › Blockchain Ledger › ledger table loads and renders block rows (retry #1) (2.1s)
+  ✓  12 [chromium] › ../e2e/ledger.spec.ts:27:7 › Blockchain Ledger › block number is displayed with # prefix (1.4s)
+  ✘  13 [chromium] › ../e2e/ledger.spec.ts:34:7 › Blockchain Ledger › milestone event badges are displayed (1.4s)
+  ✘  14 [chromium] › ../e2e/ledger.spec.ts:34:7 › Blockchain Ledger › milestone event badges are displayed (retry #1) (2.3s)
+  ✓  15 [chromium] › ../e2e/ledger.spec.ts:42:7 › Blockchain Ledger › verified blocks show "Verified" status (1.6s)
+  ✓  16 [chromium] › ../e2e/ledger.spec.ts:48:7 › Blockchain Ledger › transaction hash is truncated in the table (1.3s)
+  ✓  17 [chromium] › ../e2e/ledger.spec.ts:60:7 › Blockchain Ledger › transaction hash links open Stellar Expert in a new tab (1.3s)
+  ✘  18 [chromium] › ../e2e/ledger.spec.ts:75:7 › Blockchain Ledger › "Next" button fetches the next cursor page (1.8s)
+  ✘  19 [chromium] › ../e2e/ledger.spec.ts:75:7 › Blockchain Ledger › "Next" button fetches the next cursor page (retry #1) (2.6s)
+  ✓  20 [chromium] › ../e2e/ledger.spec.ts:89:7 › Blockchain Ledger › "Previous" button is disabled on the first page (1.4s)
+  ✓  21 [chromium] › ../e2e/ledger.spec.ts:97:7 › Blockchain Ledger › "Previous" button navigates back to page 1 (1.8s)
+  ✓  22 [chromium] › ../e2e/ledger.spec.ts:110:7 › Blockchain Ledger › filter by milestone event resets to page 1 (1.8s)
+  ✓  23 [chromium] › ../e2e/ledger.spec.ts:125:7 › Blockchain Ledger › filter buttons render for all milestone event types (1.3s)
+  ✓  24 [chromium] › ../e2e/ledger.spec.ts:142:7 › Blockchain Ledger › refresh button triggers a new API fetch (1.9s)
+  ✘  25 [chromium] › ../e2e/ledger.spec.ts:163:7 › Blockchain Ledger › total blocks count is displayed in stats bar (1.3s)
+  ✘  26 [chromium] › ../e2e/ledger.spec.ts:163:7 › Blockchain Ledger › total blocks count is displayed in stats bar (retry #1) (2.0s)
+  ✓  27 [chromium] › ../e2e/ledger.spec.ts:170:7 › Blockchain Ledger › network label shows Stellar Mainnet (1.4s)
+  ✓  28 [chromium] › ../e2e/ledger.spec.ts:176:7 › Blockchain Ledger › error banner renders when API fails (1.3s)
+  ✓  29 [chromium] › ../e2e/notifications.spec.ts:13:7 › Notifications › notifications page renders the list (1.3s)
+  ✓  30 [chromium] › ../e2e/notifications.spec.ts:23:7 › Notifications › unread notifications have an unread indicator dot (1.3s)
+  ✓  31 [chromium] › ../e2e/notifications.spec.ts:34:7 › Notifications › read notifications are rendered in the EARLIER section (1.3s)
+  ✓  32 [chromium] › ../e2e/notifications.spec.ts:43:7 › Notifications › clicking a notification marks it as read (1.7s)
+  ✓  33 [chromium] › ../e2e/notifications.spec.ts:63:7 › Notifications › "Mark all as read" button clears all unread indicators (1.7s)
+  ✘  34 [chromium] › ../e2e/notifications.spec.ts:79:7 › Notifications › filter by Shipments tab shows only shipment notifications (5.7s)
+  ✘  35 [chromium] › ../e2e/notifications.spec.ts:79:7 › Notifications › filter by Shipments tab shows only shipment notifications (retry #1) (6.3s)
+  ✘  36 [chromium] › ../e2e/notifications.spec.ts:93:7 › Notifications › filter by Settlements tab shows only settlement notifications (5.9s)
+  ✘  37 [chromium] › ../e2e/notifications.spec.ts:93:7 › Notifications › filter by Settlements tab shows only settlement notifications (retry #1) (6.3s)
+  ✓  38 [chromium] › ../e2e/notifications.spec.ts:104:7 › Notifications › filter by System tab shows only system notifications (1.8s)
+  ✓  39 [chromium] › ../e2e/notifications.spec.ts:116:7 › Notifications › All tab restores full notification list (1.7s)
+  ✓  40 [chromium] › ../e2e/notifications.spec.ts:127:7 › Notifications › search filters notifications by title keyword (2.1s)
+  ✓  41 [chromium] › ../e2e/notifications.spec.ts:139:7 › Notifications › search filters notifications by badge content (2.1s)
+  ✓  42 [chromium] › ../e2e/notifications.spec.ts:151:7 › Notifications › empty search result shows "no notifications found" message (1.6s)
+  ✓  43 [chromium] › ../e2e/notifications.spec.ts:167:7 › Notifications › filter count badges show correct totals (1.3s)
+  ✓  44 [chromium] › ../e2e/notifications.spec.ts:175:7 › Notifications › pagination renders when list exceeds items per page (1.3s)
+  ✓  45 [chromium] › ../e2e/notifications.spec.ts:186:7 › Notifications › next page button navigates to page 2 (3.2s)
+  ✓  46 [chromium] › ../e2e/notifications.spec.ts:196:7 › Notifications › previous page button is disabled on page 1 (1.3s)
+  ✘  47 [chromium] › ../e2e/settlements.spec.ts:13:7 › Settlements › settlements list renders with correct rows (5.5s)
+  ✘  48 [chromium] › ../e2e/settlements.spec.ts:13:7 › Settlements › settlements list renders with correct rows (retry #1) (6.0s)
+  ✘  49 [chromium] › ../e2e/settlements.spec.ts:21:7 › Settlements › status badges display correct labels (5.6s)
+  ✘  50 [chromium] › ../e2e/settlements.spec.ts:21:7 › Settlements › status badges display correct labels (retry #1) (6.0s)
+  ✘  51 [chromium] › ../e2e/settlements.spec.ts:30:7 › Settlements › summary cards show totals (5.6s)
+  ✘  52 [chromium] › ../e2e/settlements.spec.ts:30:7 › Settlements › summary cards show totals (retry #1) (6.0s)
+  ✘  53 [chromium] › ../e2e/settlements.spec.ts:38:7 › Settlements › clicking a settlement row opens the Payment Detail Modal (15.6s)
+  ✘  54 [chromium] › ../e2e/settlements.spec.ts:38:7 › Settlements › clicking a settlement row opens the Payment Detail Modal (retry #1) (16.0s)
+  ✘  55 [chromium] › ../e2e/settlements.spec.ts:50:7 › Settlements › Payment Detail Modal shows shipment ID (15.6s)
+  ✘  56 [chromium] › ../e2e/settlements.spec.ts:50:7 › Settlements › Payment Detail Modal shows shipment ID (retry #1) (16.4s)
+  ✘  57 [chromium] › ../e2e/settlements.spec.ts:60:7 › Settlements › Payment Detail Modal can be closed (16.3s)
+  ✘  58 [chromium] › ../e2e/settlements.spec.ts:60:7 › Settlements › Payment Detail Modal can be closed (retry #1) (16.1s)
+  ✘  59 [chromium] › ../e2e/settlements.spec.ts:73:7 › Settlements › filter by settlement status — RELEASED only (15.6s)
+  ✘  60 [chromium] › ../e2e/settlements.spec.ts:73:7 › Settlements › filter by settlement status — RELEASED only (retry #1) (16.2s)
+  ✘  61 [chromium] › ../e2e/settlements.spec.ts:104:7 › Settlements › sort toggle button changes sort order label (5.6s)
+  ✘  62 [chromium] › ../e2e/settlements.spec.ts:104:7 › Settlements › sort toggle button changes sort order label (retry #1) (6.1s)
+  ✘  63 [chromium] › ../e2e/settlements.spec.ts:118:7 › Settlements › pagination controls are present when there are multiple pages (5.6s)
+  ✘  64 [chromium] › ../e2e/settlements.spec.ts:118:7 › Settlements › pagination controls are present when there are multiple pages (retry #1) (6.0s)
+  ✘  65 [chromium] › ../e2e/settlements.spec.ts:143:7 › Settlements › previous page button is disabled on page 1 (5.6s)
+  ✘  66 [chromium] › ../e2e/settlements.spec.ts:143:7 › Settlements › previous page button is disabled on page 1 (retry #1) (6.0s)
+  ✘  67 [chromium] › ../e2e/settlements.spec.ts:159:7 › Settlements › next page button navigates to page 2 (15.6s)
+  ✘  68 [chromium] › ../e2e/settlements.spec.ts:159:7 › Settlements › next page button navigates to page 2 (retry #1) (16.1s)
+  ✘  69 [chromium] › ../e2e/shipments-company.spec.ts:13:7 › Shipments — Company view › shipments list renders with rows from API (5.5s)
+  ✘  70 [chromium] › ../e2e/shipments-company.spec.ts:13:7 › Shipments — Company view › shipments list renders with rows from API (retry #1) (6.1s)
+  ✘  71 [chromium] › ../e2e/shipments-company.spec.ts:22:7 › Shipments — Company view › pagination summary is displayed (5.6s)
+  ✘  72 [chromium] › ../e2e/shipments-company.spec.ts:22:7 › Shipments — Company view › pagination summary is displayed (retry #1) (6.1s)
+  ✘  73 [chromium] › ../e2e/shipments-company.spec.ts:28:7 › Shipments — Company view › previous page button is disabled on first page (5.6s)
+  ✘  74 [chromium] › ../e2e/shipments-company.spec.ts:28:7 › Shipments — Company view › previous page button is disabled on first page (retry #1) (6.1s)
+  ✓  75 [chromium] › ../e2e/shipments-company.spec.ts:35:7 › Shipments — Company view › filter shipments by status — IN_TRANSIT (855ms)
+  ✘  76 [chromium] › ../e2e/shipments-company.spec.ts:61:7 › Shipments — Company view › shipment row shows origin, destination, and status badge (5.5s)
+  ✘  77 [chromium] › ../e2e/shipments-company.spec.ts:61:7 › Shipments — Company view › shipment row shows origin, destination, and status badge (retry #1) (6.1s)
+  ✘  78 [chromium] › ../e2e/shipments-company.spec.ts:72:7 › Shipments — Company view › open shipment detail renders all key sections (5.6s)
+  ✘  79 [chromium] › ../e2e/shipments-company.spec.ts:72:7 › Shipments — Company view › open shipment detail renders all key sections (retry #1) (1.6s)
+  ✓  80 [chromium] › ../e2e/shipments-company.spec.ts:85:7 › Shipments — Company view › create shipment form renders all required fields (854ms)
+  ✓  81 [chromium] › ../e2e/shipments-company.spec.ts:97:7 › Shipments — Company view › create shipment form shows validation errors when submitted empty (3.2s)
+  ✘  82 [chromium] › ../e2e/shipments-company.spec.ts:112:7 › Shipments — Company view › create shipment submits and shows success screen (7.7s)
+  ✘  83 [chromium] › ../e2e/shipments-company.spec.ts:112:7 › Shipments — Company view › create shipment submits and shows success screen (retry #1) (8.0s)
+  ✘  84 [chromium] › ../e2e/shipments-company.spec.ts:143:7 › Shipments — Company view › create another button resets the form after success (7.9s)
+  ✘  85 [chromium] › ../e2e/shipments-company.spec.ts:143:7 › Shipments — Company view › create another button resets the form after success (retry #1) (8.0s)
+  ✓  86 [chromium] › ../e2e/shipments-company.spec.ts:179:7 › Shipments — Company view › back button navigates away from create form (2.4s)
+  ✘  87 [chromium] › ../e2e/shipments-customer.spec.ts:13:7 › Shipments — Customer view › customer can view the shipments list (5.5s)
+  ✘  88 [chromium] › ../e2e/shipments-customer.spec.ts:13:7 › Shipments — Customer view › customer can view the shipments list (retry #1) (6.0s)
+  ✘  89 [chromium] › ../e2e/shipments-customer.spec.ts:22:7 › Shipments — Customer view › customer can open a shipment detail page (5.6s)
+  ✘  90 [chromium] › ../e2e/shipments-customer.spec.ts:22:7 › Shipments — Customer view › customer can open a shipment detail page (retry #1) (1.6s)
+  ✘  91 [chromium] › ../e2e/shipments-customer.spec.ts:29:7 › Shipments — Customer view › customer shipment detail shows milestone timeline (5.6s)
+  ✓  92 [chromium] › ../e2e/shipments-customer.spec.ts:29:7 › Shipments — Customer view › customer shipment detail shows milestone timeline (retry #1) (1.6s)
+  ✓  93 [chromium] › ../e2e/shipments-customer.spec.ts:41:7 › Shipments — Customer view › customer cannot see "Create Shipment" link in navigation (463ms)
+  ✓  94 [chromium] › ../e2e/shipments-customer.spec.ts:52:7 › Shipments — Customer view › customer cannot access the create shipment page directly (464ms)
+  ✘  95 [chromium] › ../e2e/shipments-customer.spec.ts:63:7 › Shipments — Customer view › customer shipments list shows correct columns (5.4s)
+  ✘  96 [chromium] › ../e2e/shipments-customer.spec.ts:63:7 › Shipments — Customer view › customer shipments list shows correct columns (retry #1) (6.1s)
+  ✘  97 [chromium] › ../e2e/shipments-customer.spec.ts:80:7 › Shipments — Customer view › customer sees delivery status badge on shipment row (5.6s)
+  ✘  98 [chromium] › ../e2e/shipments-customer.spec.ts:80:7 › Shipments — Customer view › customer sees delivery status badge on shipment row (retry #1) (6.0s)
 
 
-  1) [chromium] › ../e2e/auth.spec.ts:11:7 › Authentication › login with valid credentials redirects to dashboard 
-
-    Error: expect(page).toHaveURL(expected) failed
-
-    Expected: "http://localhost:5173/dashboard"
-    Received: "http://localhost:5173/login"
-    Timeout:  5000ms
-
-    Call log:
-      - Expect "toHaveURL" with timeout 5000ms
-        14 × unexpected value "http://localhost:5173/login"
-
-
-      19 |     await page.click('button[type="submit"]');
-      20 |
-    > 21 |     await expect(page).toHaveURL("/dashboard");
-         |                        ^
-      22 |   });
-      23 |
-      24 |   test("login with invalid credentials shows error message", async ({
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/auth.spec.ts:21:24
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/auth-Authentication-login--23dd6-ials-redirects-to-dashboard-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/auth-Authentication-login--23dd6-ials-redirects-to-dashboard-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(page).toHaveURL(expected) failed
-
-    Expected: "http://localhost:5173/dashboard"
-    Received: "http://localhost:5173/login"
-    Timeout:  5000ms
-
-    Call log:
-      - Expect "toHaveURL" with timeout 5000ms
-        14 × unexpected value "http://localhost:5173/login"
-
-
-      19 |     await page.click('button[type="submit"]');
-      20 |
-    > 21 |     await expect(page).toHaveURL("/dashboard");
-         |                        ^
-      22 |   });
-      23 |
-      24 |   test("login with invalid credentials shows error message", async ({
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/auth.spec.ts:21:24
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/auth-Authentication-login--23dd6-ials-redirects-to-dashboard-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/auth-Authentication-login--23dd6-ials-redirects-to-dashboard-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/auth-Authentication-login--23dd6-ials-redirects-to-dashboard-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/auth-Authentication-login--23dd6-ials-redirects-to-dashboard-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  2) [chromium] › ../e2e/auth.spec.ts:91:7 › Authentication › previously saved location is restored after login 
-
-    Error: expect(page).toHaveURL(expected) failed
-
-    Expected: "http://localhost:5173/dashboard/shipments"
-    Received: "http://localhost:5173/login"
-    Timeout:  5000ms
-
-    Call log:
-      - Expect "toHaveURL" with timeout 5000ms
-        14 × unexpected value "http://localhost:5173/login"
-
-
-      107 |     await page.click('button[type="submit"]');
-      108 |
-    > 109 |     await expect(page).toHaveURL("/dashboard/shipments");
-          |                        ^
-      110 |   });
-      111 |
-      112 |   test("auth check loading spinner renders then resolves", async ({ page }) => {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/auth.spec.ts:109:24
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/auth-Authentication-previo-d034a-ion-is-restored-after-login-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/auth-Authentication-previo-d034a-ion-is-restored-after-login-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(page).toHaveURL(expected) failed
-
-    Expected: "http://localhost:5173/dashboard/shipments"
-    Received: "http://localhost:5173/login"
-    Timeout:  5000ms
-
-    Call log:
-      - Expect "toHaveURL" with timeout 5000ms
-        14 × unexpected value "http://localhost:5173/login"
-
-
-      107 |     await page.click('button[type="submit"]');
-      108 |
-    > 109 |     await expect(page).toHaveURL("/dashboard/shipments");
-          |                        ^
-      110 |   });
-      111 |
-      112 |   test("auth check loading spinner renders then resolves", async ({ page }) => {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/auth.spec.ts:109:24
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/auth-Authentication-previo-d034a-ion-is-restored-after-login-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/auth-Authentication-previo-d034a-ion-is-restored-after-login-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/auth-Authentication-previo-d034a-ion-is-restored-after-login-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/auth-Authentication-previo-d034a-ion-is-restored-after-login-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  3) [chromium] › ../e2e/ledger.spec.ts:13:7 › Blockchain Ledger › ledger table loads and renders block rows 
+  1) [chromium] › ../e2e/ledger.spec.ts:13:7 › Blockchain Ledger › ledger table loads and renders block rows 
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByRole('table', { name: /blockchain ledger/i })
+    Locator: getByText('NV-001')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('NV-001') resolved to 2 elements:
+        1) <span class="font-medium text-text-primary">NV-001</span> aka getByText('NV-').first()
+        2) <span class="font-medium text-text-primary">NV-001</span> aka getByText('NV-').nth(1)
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByRole('table', { name: /blockchain ledger/i })
+      - waiting for getByText('NV-001')
 
 
-      17 |     await expect(
-      18 |       page.getByRole("table", { name: /blockchain ledger/i }),
-    > 19 |     ).toBeVisible();
-         |       ^
-      20 |
       21 |     // First page blocks should be visible
       22 |     for (const block of ledgerFixture.page1.data) {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:19:7
+    > 23 |       await expect(page.getByText(block.shipmentReference)).toBeVisible();
+         |                                                             ^
+      24 |     }
+      25 |   });
+      26 |
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:23:61
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ../test-results/ledger-Blockchain-Ledger-l-f39a1-oads-and-renders-block-rows-chromium/test-failed-1.png
@@ -272,24 +137,25 @@ Running 69 tests using 1 worker
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByRole('table', { name: /blockchain ledger/i })
+    Locator: getByText('NV-001')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('NV-001') resolved to 2 elements:
+        1) <span class="font-medium text-text-primary">NV-001</span> aka getByText('NV-').first()
+        2) <span class="font-medium text-text-primary">NV-001</span> aka getByText('NV-').nth(1)
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByRole('table', { name: /blockchain ledger/i })
+      - waiting for getByText('NV-001')
 
 
-      17 |     await expect(
-      18 |       page.getByRole("table", { name: /blockchain ledger/i }),
-    > 19 |     ).toBeVisible();
-         |       ^
-      20 |
       21 |     // First page blocks should be visible
       22 |     for (const block of ledgerFixture.page1.data) {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:19:7
+    > 23 |       await expect(page.getByText(block.shipmentReference)).toBeVisible();
+         |                                                             ^
+      24 |     }
+      25 |   });
+      26 |
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:23:61
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ../test-results/ledger-Blockchain-Ledger-l-f39a1-oads-and-renders-block-rows-chromium-retry1/test-failed-1.png
@@ -305,292 +171,97 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  4) [chromium] › ../e2e/ledger.spec.ts:27:7 › Blockchain Ledger › block number is displayed with # prefix 
+  2) [chromium] › ../e2e/ledger.spec.ts:34:7 › Blockchain Ledger › milestone event badges are displayed 
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByText('#100')
+    Locator: getByText('Shipment Created')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('Shipment Created') resolved to 2 elements:
+        1) <button id="ledger-filter-shipment_created" class="px-3 py-1.5 rounded-lg text-xs font-medium transition-all border bg-background-elevated text-text-secondary border-border hover:border-primary/30 hover:text-text-primary">Shipment Created</button> aka getByRole('button', { name: 'Shipment Created' })
+        2) <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-400/10 text-blue-400">…</span> aka getByLabel('Blockchain ledger events table').getByText('Shipment Created')
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
+      - waiting for getByText('Shipment Created')
 
 
-      28 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-      29 |
-    > 30 |     await expect(page.getByText("#100")).toBeVisible();
-         |                                          ^
-      31 |     await expect(page.getByText("#101")).toBeVisible();
-      32 |   });
-      33 |
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:30:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-b-db56c-er-is-displayed-with-prefix-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-b-db56c-er-is-displayed-with-prefix-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-      28 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-      29 |
-    > 30 |     await expect(page.getByText("#100")).toBeVisible();
-         |                                          ^
-      31 |     await expect(page.getByText("#101")).toBeVisible();
-      32 |   });
-      33 |
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:30:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-b-db56c-er-is-displayed-with-prefix-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-b-db56c-er-is-displayed-with-prefix-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-b-db56c-er-is-displayed-with-prefix-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-b-db56c-er-is-displayed-with-prefix-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  5) [chromium] › ../e2e/ledger.spec.ts:42:7 › Blockchain Ledger › verified blocks show "Verified" status 
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('Verified').first()
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('Verified').first()
-
-
-      43 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-      44 |
-    > 45 |     await expect(page.getByText("Verified").first()).toBeVisible();
+      35 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
+      36 |
+    > 37 |     await expect(page.getByText("Shipment Created")).toBeVisible();
          |                                                      ^
-      46 |   });
-      47 |
-      48 |   test("transaction hash is truncated in the table", async ({ page }) => {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:45:54
+      38 |     await expect(page.getByText("In Transit")).toBeVisible();
+      39 |     await expect(page.getByText("Delivered")).toBeVisible();
+      40 |   });
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:37:54
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-v-7d4ff-blocks-show-Verified-status-chromium/test-failed-1.png
+    ../test-results/ledger-Blockchain-Ledger-m-1882d--event-badges-are-displayed-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ../test-results/ledger-Blockchain-Ledger-v-7d4ff-blocks-show-Verified-status-chromium/error-context.md
+    Error Context: ../test-results/ledger-Blockchain-Ledger-m-1882d--event-badges-are-displayed-chromium/error-context.md
 
     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByText('Verified').first()
+    Locator: getByText('In Transit')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('In Transit') resolved to 2 elements:
+        1) <button id="ledger-filter-in_transit" class="px-3 py-1.5 rounded-lg text-xs font-medium transition-all border bg-background-elevated text-text-secondary border-border hover:border-primary/30 hover:text-text-primary">In Transit</button> aka getByRole('button', { name: 'In Transit' })
+        2) <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary">…</span> aka getByLabel('Blockchain ledger events table').getByText('In Transit')
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('Verified').first()
+      - waiting for getByText('In Transit')
 
 
-      43 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-      44 |
-    > 45 |     await expect(page.getByText("Verified").first()).toBeVisible();
-         |                                                      ^
-      46 |   });
-      47 |
-      48 |   test("transaction hash is truncated in the table", async ({ page }) => {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:45:54
+      36 |
+      37 |     await expect(page.getByText("Shipment Created")).toBeVisible();
+    > 38 |     await expect(page.getByText("In Transit")).toBeVisible();
+         |                                                ^
+      39 |     await expect(page.getByText("Delivered")).toBeVisible();
+      40 |   });
+      41 |
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:38:48
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-v-7d4ff-blocks-show-Verified-status-chromium-retry1/test-failed-1.png
+    ../test-results/ledger-Blockchain-Ledger-m-1882d--event-badges-are-displayed-chromium-retry1/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ../test-results/ledger-Blockchain-Ledger-v-7d4ff-blocks-show-Verified-status-chromium-retry1/error-context.md
+    Error Context: ../test-results/ledger-Blockchain-Ledger-m-1882d--event-badges-are-displayed-chromium-retry1/error-context.md
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-v-7d4ff-blocks-show-Verified-status-chromium-retry1/trace.zip
+    ../test-results/ledger-Blockchain-Ledger-m-1882d--event-badges-are-displayed-chromium-retry1/trace.zip
     Usage:
 
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-v-7d4ff-blocks-show-Verified-status-chromium-retry1/trace.zip
+        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-m-1882d--event-badges-are-displayed-chromium-retry1/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  6) [chromium] › ../e2e/ledger.spec.ts:48:7 › Blockchain Ledger › transaction hash is truncated in the table 
+  3) [chromium] › ../e2e/ledger.spec.ts:75:7 › Blockchain Ledger › "Next" button fetches the next cursor page 
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByText('aabbccdd...223344aa')
+    Locator: getByText('Settlement Completed')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('Settlement Completed') resolved to 2 elements:
+        1) <button id="ledger-filter-settlement_completed" class="px-3 py-1.5 rounded-lg text-xs font-medium transition-all border bg-background-elevated text-text-secondary border-border hover:border-primary/30 hover:text-text-primary">Settlement Completed</button> aka getByRole('button', { name: 'Settlement Completed' })
+        2) <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-400/10 text-emerald-400">…</span> aka getByLabel('Blockchain ledger events table').getByText('Settlement Completed')
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('aabbccdd...223344aa')
+      - waiting for getByText('Settlement Completed')
 
 
-      55 |     await expect(page.getByText(hash)).not.toBeVisible();
-      56 |     // The truncated version should be visible inside a link
-    > 57 |     await expect(page.getByText(truncated)).toBeVisible();
-         |                                             ^
-      58 |   });
-      59 |
-      60 |   test("transaction hash links open Stellar Expert in a new tab", async ({
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:57:45
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-t-9e03e-h-is-truncated-in-the-table-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-t-9e03e-h-is-truncated-in-the-table-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('aabbccdd...223344aa')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('aabbccdd...223344aa')
-
-
-      55 |     await expect(page.getByText(hash)).not.toBeVisible();
-      56 |     // The truncated version should be visible inside a link
-    > 57 |     await expect(page.getByText(truncated)).toBeVisible();
-         |                                             ^
-      58 |   });
-      59 |
-      60 |   test("transaction hash links open Stellar Expert in a new tab", async ({
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:57:45
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-t-9e03e-h-is-truncated-in-the-table-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-t-9e03e-h-is-truncated-in-the-table-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-t-9e03e-h-is-truncated-in-the-table-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-t-9e03e-h-is-truncated-in-the-table-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  7) [chromium] › ../e2e/ledger.spec.ts:60:7 › Blockchain Ledger › transaction hash links open Stellar Expert in a new tab 
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: locator('a[href*="aabbccdd11223344aabbccdd11223344aabbccdd11223344aabbccdd11223344aa"]').first()
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for locator('a[href*="aabbccdd11223344aabbccdd11223344aabbccdd11223344aabbccdd11223344aa"]').first()
-
-
-      65 |     const hash = ledgerFixture.page1.data[0].transactionHash;
-      66 |     const txLink = page.locator(`a[href*="${hash}"]`).first();
-    > 67 |     await expect(txLink).toBeVisible();
-         |                          ^
-      68 |     await expect(txLink).toHaveAttribute("target", "_blank");
-      69 |     await expect(txLink).toHaveAttribute(
-      70 |       "href",
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:67:26
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-t-c1832-Stellar-Expert-in-a-new-tab-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-t-c1832-Stellar-Expert-in-a-new-tab-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: locator('a[href*="aabbccdd11223344aabbccdd11223344aabbccdd11223344aabbccdd11223344aa"]').first()
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for locator('a[href*="aabbccdd11223344aabbccdd11223344aabbccdd11223344aabbccdd11223344aa"]').first()
-
-
-      65 |     const hash = ledgerFixture.page1.data[0].transactionHash;
-      66 |     const txLink = page.locator(`a[href*="${hash}"]`).first();
-    > 67 |     await expect(txLink).toBeVisible();
-         |                          ^
-      68 |     await expect(txLink).toHaveAttribute("target", "_blank");
-      69 |     await expect(txLink).toHaveAttribute(
-      70 |       "href",
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:67:26
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-t-c1832-Stellar-Expert-in-a-new-tab-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-t-c1832-Stellar-Expert-in-a-new-tab-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-t-c1832-Stellar-Expert-in-a-new-tab-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-t-c1832-Stellar-Expert-in-a-new-tab-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  8) [chromium] › ../e2e/ledger.spec.ts:75:7 › Blockchain Ledger › "Next" button fetches the next cursor page 
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-      77 |
-      78 |     // Wait for first page to load
-    > 79 |     await expect(page.getByText("#100")).toBeVisible();
-         |                                          ^
-      80 |
-      81 |     // Click next page
-      82 |     await page.getByRole("button", { name: /load next page|^next$/i }).click();
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:79:42
+      84 |     // Second page block should appear
+      85 |     await expect(page.getByText("#103")).toBeVisible();
+    > 86 |     await expect(page.getByText("Settlement Completed")).toBeVisible();
+         |                                                          ^
+      87 |   });
+      88 |
+      89 |   test('"Previous" button is disabled on the first page', async ({ page }) => {
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:86:58
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ../test-results/ledger-Blockchain-Ledger-N-8147e-etches-the-next-cursor-page-chromium/test-failed-1.png
@@ -602,24 +273,25 @@ Running 69 tests using 1 worker
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByText('#100')
+    Locator: getByText('Settlement Completed')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('Settlement Completed') resolved to 2 elements:
+        1) <button id="ledger-filter-settlement_completed" class="px-3 py-1.5 rounded-lg text-xs font-medium transition-all border bg-background-elevated text-text-secondary border-border hover:border-primary/30 hover:text-text-primary">Settlement Completed</button> aka getByRole('button', { name: 'Settlement Completed' })
+        2) <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-400/10 text-emerald-400">…</span> aka getByLabel('Blockchain ledger events table').getByText('Settlement Completed')
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
+      - waiting for getByText('Settlement Completed')
 
 
-      77 |
-      78 |     // Wait for first page to load
-    > 79 |     await expect(page.getByText("#100")).toBeVisible();
-         |                                          ^
-      80 |
-      81 |     // Click next page
-      82 |     await page.getByRole("button", { name: /load next page|^next$/i }).click();
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:79:42
+      84 |     // Second page block should appear
+      85 |     await expect(page.getByText("#103")).toBeVisible();
+    > 86 |     await expect(page.getByText("Settlement Completed")).toBeVisible();
+         |                                                          ^
+      87 |   });
+      88 |
+      89 |   test('"Previous" button is disabled on the first page', async ({ page }) => {
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:86:58
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ../test-results/ledger-Blockchain-Ledger-N-8147e-etches-the-next-cursor-page-chromium-retry1/test-failed-1.png
@@ -635,278 +307,19 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  9) [chromium] › ../e2e/ledger.spec.ts:89:7 › Blockchain Ledger › "Previous" button is disabled on the first page 
-
-    Error: expect(locator).toBeDisabled() failed
-
-    Locator: getByRole('button', { name: /previous page|^previous$/i })
-    Expected: disabled
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeDisabled" with timeout 5000ms
-      - waiting for getByRole('button', { name: /previous page|^previous$/i })
-
-
-      92 |     await expect(
-      93 |       page.getByRole("button", { name: /previous page|^previous$/i }),
-    > 94 |     ).toBeDisabled();
-         |       ^
-      95 |   });
-      96 |
-      97 |   test('"Previous" button navigates back to page 1', async ({ page }) => {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:94:7
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-P-1bb46--disabled-on-the-first-page-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-P-1bb46--disabled-on-the-first-page-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(locator).toBeDisabled() failed
-
-    Locator: getByRole('button', { name: /previous page|^previous$/i })
-    Expected: disabled
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeDisabled" with timeout 5000ms
-      - waiting for getByRole('button', { name: /previous page|^previous$/i })
-
-
-      92 |     await expect(
-      93 |       page.getByRole("button", { name: /previous page|^previous$/i }),
-    > 94 |     ).toBeDisabled();
-         |       ^
-      95 |   });
-      96 |
-      97 |   test('"Previous" button navigates back to page 1', async ({ page }) => {
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:94:7
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-P-1bb46--disabled-on-the-first-page-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-P-1bb46--disabled-on-the-first-page-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-P-1bb46--disabled-on-the-first-page-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-P-1bb46--disabled-on-the-first-page-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  10) [chromium] › ../e2e/ledger.spec.ts:97:7 › Blockchain Ledger › "Previous" button navigates back to page 1 
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-       98 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-       99 |
-    > 100 |     await expect(page.getByText("#100")).toBeVisible();
-          |                                          ^
-      101 |     await page.getByRole("button", { name: /load next page|^next$/i }).click();
-      102 |     await expect(page.getByText("#103")).toBeVisible();
-      103 |
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:100:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-P-66cac-on-navigates-back-to-page-1-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-P-66cac-on-navigates-back-to-page-1-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-       98 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-       99 |
-    > 100 |     await expect(page.getByText("#100")).toBeVisible();
-          |                                          ^
-      101 |     await page.getByRole("button", { name: /load next page|^next$/i }).click();
-      102 |     await expect(page.getByText("#103")).toBeVisible();
-      103 |
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:100:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-P-66cac-on-navigates-back-to-page-1-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-P-66cac-on-navigates-back-to-page-1-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-P-66cac-on-navigates-back-to-page-1-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-P-66cac-on-navigates-back-to-page-1-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  11) [chromium] › ../e2e/ledger.spec.ts:110:7 › Blockchain Ledger › filter by milestone event resets to page 1 
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-      112 |
-      113 |     // Navigate to page 2 first
-    > 114 |     await expect(page.getByText("#100")).toBeVisible();
-          |                                          ^
-      115 |     await page.getByRole("button", { name: /load next page|^next$/i }).click();
-      116 |     await expect(page.getByText("#103")).toBeVisible();
-      117 |
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:114:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-f-96d50-tone-event-resets-to-page-1-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-f-96d50-tone-event-resets-to-page-1-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-      112 |
-      113 |     // Navigate to page 2 first
-    > 114 |     await expect(page.getByText("#100")).toBeVisible();
-          |                                          ^
-      115 |     await page.getByRole("button", { name: /load next page|^next$/i }).click();
-      116 |     await expect(page.getByText("#103")).toBeVisible();
-      117 |
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:114:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-f-96d50-tone-event-resets-to-page-1-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-f-96d50-tone-event-resets-to-page-1-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-f-96d50-tone-event-resets-to-page-1-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-f-96d50-tone-event-resets-to-page-1-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  12) [chromium] › ../e2e/ledger.spec.ts:142:7 › Blockchain Ledger › refresh button triggers a new API fetch 
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-      152 |
-      153 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-    > 154 |     await expect(page.getByText("#100")).toBeVisible();
-          |                                          ^
-      155 |
-      156 |     const beforeCount = fetchCount;
-      157 |     await page.click("#ledger-refresh-btn");
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:154:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-r-d56c4-on-triggers-a-new-API-fetch-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-r-d56c4-on-triggers-a-new-API-fetch-chromium/error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(locator).toBeVisible() failed
-
-    Locator: getByText('#100')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
-
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByText('#100')
-
-
-      152 |
-      153 |     await gotoProtected(page, "/dashboard/blockchain-ledger");
-    > 154 |     await expect(page.getByText("#100")).toBeVisible();
-          |                                          ^
-      155 |
-      156 |     const beforeCount = fetchCount;
-      157 |     await page.click("#ledger-refresh-btn");
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/ledger.spec.ts:154:42
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-r-d56c4-on-triggers-a-new-API-fetch-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/ledger-Blockchain-Ledger-r-d56c4-on-triggers-a-new-API-fetch-chromium-retry1/error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/ledger-Blockchain-Ledger-r-d56c4-on-triggers-a-new-API-fetch-chromium-retry1/trace.zip
-    Usage:
-
-        pnpm exec playwright show-trace ../test-results/ledger-Blockchain-Ledger-r-d56c4-on-triggers-a-new-API-fetch-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-  13) [chromium] › ../e2e/ledger.spec.ts:163:7 › Blockchain Ledger › total blocks count is displayed in stats bar 
+  4) [chromium] › ../e2e/ledger.spec.ts:163:7 › Blockchain Ledger › total blocks count is displayed in stats bar 
 
     Error: expect(locator).toBeVisible() failed
 
     Locator: getByText('10')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('10') resolved to 6 elements:
+        1) <p class="text-sm font-semibold text-text-primary">10</p> aka getByText('10', { exact: true })
+        2) <span class="font-mono text-primary font-semibold">#100</span> aka getByText('#100')
+        3) <td class="px-5 py-4 text-sm text-text-primary border-b border-[rgba(98,255,255,0.08)] text-text-secondary font-mono text-xs">Jan 10, 2026, 10:00:00</td> aka getByRole('cell', { name: 'Jan 10, 2026, 10:00:' })
+        4) <span class="font-mono text-primary font-semibold">#101</span> aka getByText('#101')
+        5) <span class="font-mono text-primary font-semibold">#102</span> aka getByText('#102')
+        6) <span class="text-sm text-text-secondary">Page 1 · 10 total blocks</span> aka getByText('Page 1 · 10 total blocks')
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
@@ -934,8 +347,13 @@ Running 69 tests using 1 worker
 
     Locator: getByText('10')
     Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Error: strict mode violation: getByText('10') resolved to 6 elements:
+        1) <p class="text-sm font-semibold text-text-primary">10</p> aka getByText('10', { exact: true })
+        2) <span class="font-mono text-primary font-semibold">#100</span> aka getByText('#100')
+        3) <td class="px-5 py-4 text-sm text-text-primary border-b border-[rgba(98,255,255,0.08)] text-text-secondary font-mono text-xs">Jan 10, 2026, 10:00:00</td> aka getByRole('cell', { name: 'Jan 10, 2026, 10:00:' })
+        4) <span class="font-mono text-primary font-semibold">#101</span> aka getByText('#101')
+        5) <span class="font-mono text-primary font-semibold">#102</span> aka getByText('#102')
+        6) <span class="text-sm text-text-secondary">Page 1 · 10 total blocks</span> aka getByText('Page 1 · 10 total blocks')
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
@@ -965,7 +383,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  14) [chromium] › ../e2e/notifications.spec.ts:79:7 › Notifications › filter by Shipments tab shows only shipment notifications 
+  5) [chromium] › ../e2e/notifications.spec.ts:79:7 › Notifications › filter by Shipments tab shows only shipment notifications 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1031,7 +449,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  15) [chromium] › ../e2e/notifications.spec.ts:93:7 › Notifications › filter by Settlements tab shows only settlement notifications 
+  6) [chromium] › ../e2e/notifications.spec.ts:93:7 › Notifications › filter by Settlements tab shows only settlement notifications 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1097,7 +515,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  16) [chromium] › ../e2e/settlements.spec.ts:13:7 › Settlements › settlements list renders with correct rows 
+  7) [chromium] › ../e2e/settlements.spec.ts:13:7 › Settlements › settlements list renders with correct rows 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1163,7 +581,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  17) [chromium] › ../e2e/settlements.spec.ts:21:7 › Settlements › status badges display correct labels 
+  8) [chromium] › ../e2e/settlements.spec.ts:21:7 › Settlements › status badges display correct labels 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1229,7 +647,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  18) [chromium] › ../e2e/settlements.spec.ts:30:7 › Settlements › summary cards show totals ───────
+  9) [chromium] › ../e2e/settlements.spec.ts:30:7 › Settlements › summary cards show totals ────────
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1295,7 +713,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  19) [chromium] › ../e2e/settlements.spec.ts:38:7 › Settlements › clicking a settlement row opens the Payment Detail Modal 
+  10) [chromium] › ../e2e/settlements.spec.ts:38:7 › Settlements › clicking a settlement row opens the Payment Detail Modal 
 
     TimeoutError: locator.click: Timeout 15000ms exceeded.
     Call log:
@@ -1347,7 +765,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  20) [chromium] › ../e2e/settlements.spec.ts:50:7 › Settlements › Payment Detail Modal shows shipment ID 
+  11) [chromium] › ../e2e/settlements.spec.ts:50:7 › Settlements › Payment Detail Modal shows shipment ID 
 
     TimeoutError: locator.click: Timeout 15000ms exceeded.
     Call log:
@@ -1399,7 +817,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  21) [chromium] › ../e2e/settlements.spec.ts:60:7 › Settlements › Payment Detail Modal can be closed 
+  12) [chromium] › ../e2e/settlements.spec.ts:60:7 › Settlements › Payment Detail Modal can be closed 
 
     TimeoutError: locator.click: Timeout 15000ms exceeded.
     Call log:
@@ -1451,7 +869,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  22) [chromium] › ../e2e/settlements.spec.ts:73:7 › Settlements › filter by settlement status — RELEASED only 
+  13) [chromium] › ../e2e/settlements.spec.ts:73:7 › Settlements › filter by settlement status — RELEASED only 
 
     TimeoutError: locator.selectOption: Timeout 15000ms exceeded.
     Call log:
@@ -1503,7 +921,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  23) [chromium] › ../e2e/settlements.spec.ts:104:7 › Settlements › sort toggle button changes sort order label 
+  14) [chromium] › ../e2e/settlements.spec.ts:104:7 › Settlements › sort toggle button changes sort order label 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1569,7 +987,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  24) [chromium] › ../e2e/settlements.spec.ts:118:7 › Settlements › pagination controls are present when there are multiple pages 
+  15) [chromium] › ../e2e/settlements.spec.ts:118:7 › Settlements › pagination controls are present when there are multiple pages 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1635,7 +1053,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  25) [chromium] › ../e2e/settlements.spec.ts:143:7 › Settlements › previous page button is disabled on page 1 
+  16) [chromium] › ../e2e/settlements.spec.ts:143:7 › Settlements › previous page button is disabled on page 1 
 
     Error: expect(locator).toBeDisabled() failed
 
@@ -1701,7 +1119,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  26) [chromium] › ../e2e/settlements.spec.ts:159:7 › Settlements › next page button navigates to page 2 
+  17) [chromium] › ../e2e/settlements.spec.ts:159:7 › Settlements › next page button navigates to page 2 
 
     TimeoutError: locator.click: Timeout 15000ms exceeded.
     Call log:
@@ -1753,7 +1171,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  27) [chromium] › ../e2e/shipments-company.spec.ts:13:7 › Shipments — Company view › shipments list renders with rows from API 
+  18) [chromium] › ../e2e/shipments-company.spec.ts:13:7 › Shipments — Company view › shipments list renders with rows from API 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1819,7 +1237,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  28) [chromium] › ../e2e/shipments-company.spec.ts:22:7 › Shipments — Company view › pagination summary is displayed 
+  19) [chromium] › ../e2e/shipments-company.spec.ts:22:7 › Shipments — Company view › pagination summary is displayed 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -1885,7 +1303,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  29) [chromium] › ../e2e/shipments-company.spec.ts:28:7 › Shipments — Company view › previous page button is disabled on first page 
+  20) [chromium] › ../e2e/shipments-company.spec.ts:28:7 › Shipments — Company view › previous page button is disabled on first page 
 
     Error: expect(locator).toBeDisabled() failed
 
@@ -1951,7 +1369,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  30) [chromium] › ../e2e/shipments-company.spec.ts:61:7 › Shipments — Company view › shipment row shows origin, destination, and status badge 
+  21) [chromium] › ../e2e/shipments-company.spec.ts:61:7 › Shipments — Company view › shipment row shows origin, destination, and status badge 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -2017,15 +1435,14 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  31) [chromium] › ../e2e/shipments-company.spec.ts:72:7 › Shipments — Company view › open shipment detail renders all key sections 
+  22) [chromium] › ../e2e/shipments-company.spec.ts:72:7 › Shipments — Company view › open shipment detail renders all key sections 
 
     Error: expect(locator).toBeVisible() failed
 
     Locator: getByText(/#ship-001/i)
     Expected: visible
-    Error: strict mode violation: getByText(/#ship-001/i) resolved to 2 elements:
-        1) <span aria-current="page" class="text-white font-medium">#ship-001</span> aka getByLabel('breadcrumb').getByText('#ship-')
-        2) <h1 class="text-3xl md:text-4xl font-bold text-white">#ship-001</h1> aka getByRole('heading', { name: '#ship-' })
+    Timeout: 5000ms
+    Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
@@ -2085,7 +1502,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  32) [chromium] › ../e2e/shipments-company.spec.ts:112:7 › Shipments — Company view › create shipment submits and shows success screen 
+  23) [chromium] › ../e2e/shipments-company.spec.ts:112:7 › Shipments — Company view › create shipment submits and shows success screen 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -2151,7 +1568,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  33) [chromium] › ../e2e/shipments-company.spec.ts:143:7 › Shipments — Company view › create another button resets the form after success 
+  24) [chromium] › ../e2e/shipments-company.spec.ts:143:7 › Shipments — Company view › create another button resets the form after success 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -2217,7 +1634,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  34) [chromium] › ../e2e/shipments-customer.spec.ts:13:7 › Shipments — Customer view › customer can view the shipments list 
+  25) [chromium] › ../e2e/shipments-customer.spec.ts:13:7 › Shipments — Customer view › customer can view the shipments list 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -2283,15 +1700,14 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  35) [chromium] › ../e2e/shipments-customer.spec.ts:22:7 › Shipments — Customer view › customer can open a shipment detail page 
+  26) [chromium] › ../e2e/shipments-customer.spec.ts:22:7 › Shipments — Customer view › customer can open a shipment detail page 
 
     Error: expect(locator).toBeVisible() failed
 
     Locator: getByText(/#ship-001/i)
     Expected: visible
-    Error: strict mode violation: getByText(/#ship-001/i) resolved to 2 elements:
-        1) <span aria-current="page" class="text-white font-medium">#ship-001</span> aka getByLabel('breadcrumb').getByText('#ship-')
-        2) <h1 class="text-3xl md:text-4xl font-bold text-white">#ship-001</h1> aka getByRole('heading', { name: '#ship-' })
+    Timeout: 5000ms
+    Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
@@ -2351,7 +1767,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  36) [chromium] › ../e2e/shipments-customer.spec.ts:63:7 › Shipments — Customer view › customer shipments list shows correct columns 
+  27) [chromium] › ../e2e/shipments-customer.spec.ts:63:7 › Shipments — Customer view › customer shipments list shows correct columns 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -2384,24 +1800,24 @@ Running 69 tests using 1 worker
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByRole('columnheader', { name: /origin/i })
+    Locator: getByRole('columnheader', { name: /shipment id/i })
     Expected: visible
     Timeout: 5000ms
     Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByRole('columnheader', { name: /origin/i })
+      - waiting for getByRole('columnheader', { name: /shipment id/i })
 
 
+      66 |     await expect(
+      67 |       page.getByRole("columnheader", { name: /shipment id/i }),
+    > 68 |     ).toBeVisible();
+         |       ^
       69 |     await expect(
       70 |       page.getByRole("columnheader", { name: /origin/i }),
-    > 71 |     ).toBeVisible();
-         |       ^
-      72 |     await expect(
-      73 |       page.getByRole("columnheader", { name: /destination/i }),
-      74 |     ).toBeVisible();
-        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/shipments-customer.spec.ts:71:7
+      71 |     ).toBeVisible();
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/shipments-customer.spec.ts:68:7
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ../test-results/shipments-customer-Shipmen-9f20f--list-shows-correct-columns-chromium-retry1/test-failed-1.png
@@ -2417,7 +1833,7 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  37) [chromium] › ../e2e/shipments-customer.spec.ts:80:7 › Shipments — Customer view › customer sees delivery status badge on shipment row 
+  28) [chromium] › ../e2e/shipments-customer.spec.ts:80:7 › Shipments — Customer view › customer sees delivery status badge on shipment row 
 
     Error: expect(locator).toBeVisible() failed
 
@@ -2460,7 +1876,7 @@ Running 69 tests using 1 worker
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
       - waiting for getByText(/delivered/i)
-        14 × locator resolved to <option value="DELIVERED" class="bg-[#121620]">Delivered</option>
+        12 × locator resolved to <option value="DELIVERED" class="bg-[#121620]">Delivered</option>
            - unexpected value "hidden"
 
 
@@ -2487,19 +1903,39 @@ Running 69 tests using 1 worker
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-  37 failed
-    [chromium] › ../e2e/auth.spec.ts:11:7 › Authentication › login with valid credentials redirects to dashboard 
-    [chromium] › ../e2e/auth.spec.ts:91:7 › Authentication › previously saved location is restored after login 
+  29) [chromium] › ../e2e/shipments-customer.spec.ts:29:7 › Shipments — Customer view › customer shipment detail shows milestone timeline 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('[class*="milestone"], [class*="timeline"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[class*="milestone"], [class*="timeline"]').first()
+
+
+      36 |       .locator('[class*="milestone"], [class*="timeline"]')
+      37 |       .first();
+    > 38 |     await expect(milestoneSection).toBeVisible();
+         |                                    ^
+      39 |   });
+      40 |
+      41 |   test('customer cannot see "Create Shipment" link in navigation', async ({
+        at /home/runner/work/Orbit-Haul-frontend/Orbit-Haul-frontend/e2e/shipments-customer.spec.ts:38:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/shipments-customer-Shipmen-7c5f0-il-shows-milestone-timeline-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/shipments-customer-Shipmen-7c5f0-il-shows-milestone-timeline-chromium/error-context.md
+
+  28 failed
     [chromium] › ../e2e/ledger.spec.ts:13:7 › Blockchain Ledger › ledger table loads and renders block rows 
-    [chromium] › ../e2e/ledger.spec.ts:27:7 › Blockchain Ledger › block number is displayed with # prefix 
-    [chromium] › ../e2e/ledger.spec.ts:42:7 › Blockchain Ledger › verified blocks show "Verified" status 
-    [chromium] › ../e2e/ledger.spec.ts:48:7 › Blockchain Ledger › transaction hash is truncated in the table 
-    [chromium] › ../e2e/ledger.spec.ts:60:7 › Blockchain Ledger › transaction hash links open Stellar Expert in a new tab 
+    [chromium] › ../e2e/ledger.spec.ts:34:7 › Blockchain Ledger › milestone event badges are displayed 
     [chromium] › ../e2e/ledger.spec.ts:75:7 › Blockchain Ledger › "Next" button fetches the next cursor page 
-    [chromium] › ../e2e/ledger.spec.ts:89:7 › Blockchain Ledger › "Previous" button is disabled on the first page 
-    [chromium] › ../e2e/ledger.spec.ts:97:7 › Blockchain Ledger › "Previous" button navigates back to page 1 
-    [chromium] › ../e2e/ledger.spec.ts:110:7 › Blockchain Ledger › filter by milestone event resets to page 1 
-    [chromium] › ../e2e/ledger.spec.ts:142:7 › Blockchain Ledger › refresh button triggers a new API fetch 
     [chromium] › ../e2e/ledger.spec.ts:163:7 › Blockchain Ledger › total blocks count is displayed in stats bar 
     [chromium] › ../e2e/notifications.spec.ts:79:7 › Notifications › filter by Shipments tab shows only shipment notifications 
     [chromium] › ../e2e/notifications.spec.ts:93:7 › Notifications › filter by Settlements tab shows only settlement notifications 
@@ -2525,4 +1961,6 @@ Running 69 tests using 1 worker
     [chromium] › ../e2e/shipments-customer.spec.ts:22:7 › Shipments — Customer view › customer can open a shipment detail page 
     [chromium] › ../e2e/shipments-customer.spec.ts:63:7 › Shipments — Customer view › customer shipments list shows correct columns 
     [chromium] › ../e2e/shipments-customer.spec.ts:80:7 › Shipments — Customer view › customer sees delivery status badge on shipment row 
-  32 passed (10.4m)
+  1 flaky
+    [chromium] › ../e2e/shipments-customer.spec.ts:29:7 › Shipments — Customer view › customer shipment detail shows milestone timeline 
+  40 passed (8.4m)
